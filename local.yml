@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  user: root
+  become: yes
+
+- import_playbook: openldap_common.yml tags=openldap_common
