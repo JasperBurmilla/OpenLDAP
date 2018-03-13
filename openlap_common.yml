@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  user: root
+  become: yes
+
+  vars_files:
+    - vars/openldap_packages.yml
+    - vars/openldap_all.yml
+    - vars/openldap_{{ env }}.yml
+  roles:
+    - openldap-common
