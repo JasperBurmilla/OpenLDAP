@@ -1,0 +1,5 @@
+---
+openldap_pkg:
+  - openldap-clients
+  - openldap-servers
+  - migrationtools
